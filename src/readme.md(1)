@@ -1,0 +1,106 @@
+# Java SE – Complete Handbook (Basic → Advanced)
+
+## 1. What is Java
+Java is a high-level, object-oriented, general-purpose programming language designed for scalable applications. It runs on the Java Virtual Machine (JVM), providing platform independence through bytecode execution.
+
+### Why Big Tech uses Java
+- Scalable backend and enterprise systems
+- Strong concurrency and memory model
+- Mature ecosystem with Spring, Kafka, Hadoop, Spark
+- Long-term performance and stability guarantees
+
+---
+
+## 2. Java Runtime and Architecture
+
+| Component | Description |
+|-----------|------------|
+| JDK | Development kit including compiler and tools |
+| JRE | Runtime environment to run Java applications |
+| JVM | Executes Java bytecode using Just-in-Time compilation |
+
+### JVM Memory Layout
+- Heap
+- Stack
+- Method Area
+- Program Counter Register
+- Native Method Stack
+
+---
+
+## 3. Java Basics
+
+### Data Types
+Primitive: byte, short, int, long, float, double, boolean, char  
+Reference: objects, arrays, strings
+
+### Operators
+Arithmetic, relational, logical, bitwise, ternary, assignment
+
+### Control Flow
+if-else, switch, for, while, do-while, break, continue
+
+---
+
+## 4. Object-Oriented Programming
+
+| Concept | Meaning |
+|--------|---------|
+| Class and Object | Blueprint and instance relationship |
+| Encapsulation | Restrict direct access to internal fields |
+| Inheritance | Reuse behavior from parent class |
+| Polymorphism | One interface with multiple implementations |
+| Abstraction | Hide internal details and expose essential functionality |
+
+---
+
+## 5. Strings and Immutability
+String is immutable to ensure thread safety and caching.  
+StringBuilder and StringBuffer allow mutable string operations for performance in concatenations.
+
+---
+
+## 6. Access Modifiers and Packages
+
+| Modifier | Scope |
+|----------|-------|
+| private | same class |
+| default | same package |
+| protected | same package and subclass |
+| public | everywhere |
+
+---
+
+## 7. Exception Handling
+
+### Exception Types
+Checked exceptions, unchecked exceptions, errors
+
+### Exception Keywords
+try, catch, finally, throw, throws
+
+---
+
+## 8. Collections Framework
+
+| Interface | Implementations |
+|----------|----------------|
+| List | ArrayList, LinkedList |
+| Set | HashSet, TreeSet |
+| Queue | PriorityQueue, Deque |
+| Map | HashMap, TreeMap, ConcurrentHashMap |
+
+### Time Complexity Summary
+- ArrayList: O(1) read, O(n) insert middle
+- LinkedList: O(1) insert/remove, O(n) access
+- HashMap: O(1) average access
+- ConcurrentHashMap: scalable concurrent access
+
+---
+
+## 9. Generics
+
+Enable compile-time type safety and reusable components.
+
+```java
+List<Integer> list = new ArrayList<>();
